@@ -1,158 +1,61 @@
-# 🔐 Phishing Domain Detection
+# 🛡️ Similarity-Based Phishing Domain Detection
 
-A Machine Learning project focused on detecting malicious (phishing)
-domains using domain-based lexical and structural features.
+A modular Python-based pipeline designed to identify potential phishing domains by analyzing **lexical similarity** and structural patterns in **Certificate Transparency (CT) logs**.
 
-------------------------------------------------------------------------
+---
 
 ## 📌 Project Overview
+Phishing attacks often rely on **typosquatting** (e.g., `googIe.com` instead of `google.com`). This project explores how simple yet effective similarity metrics can provide strong signals for detecting these threats by:
+1. Extracting data from public CT logs (`crt.sh`).
+2. Clustering domains using graph-based connected components.
+3. Identifying "Base Domains" (legitimate targets).
+4. Monitoring new registrations to flag high-similarity matches.
 
-Phishing attacks remain one of the most common cybersecurity threats.\
-This project aims to detect phishing domains using machine learning
-techniques by analyzing domain name characteristics and patterns.
-
-The system classifies domains into:
-
--   ✅ Legitimate\
--   ⚠️ Phishing
-
-This project demonstrates practical application of data preprocessing,
-feature engineering, and classification modeling in cybersecurity.
-
-------------------------------------------------------------------------
+---
 
 ## 🎯 Objectives
+* Extract and clean domain data from raw JSON Certificate Transparency records.
+* Group lexically similar domains using the **Levenshtein Distance** algorithm.
+* Implement a **Graph-based Clustering** approach to link related domain variants.
+* Develop an explainable detection system for newly registered suspicious domains.
 
--   Identify suspicious domain patterns
--   Engineer meaningful domain-based features
--   Train and evaluate classification models
--   Provide a reusable pipeline for phishing detection
-
-------------------------------------------------------------------------
+---
 
 ## 🧠 Technologies & Tools
+* **Python 3.x**
+* **Levenshtein**: For high-performance string similarity calculations.
+* **Graph Theory**: Used for domain clustering (Connected Components).
+* **JSON/CSV**: Standard formats for data extraction and reporting.
 
--   **Python**
--   **Pandas**
--   **NumPy**
--   **Scikit-learn**
--   **Matplotlib**
--   **Seaborn**
-
-------------------------------------------------------------------------
+---
 
 ## 📊 Project Workflow
+Run the scripts in the following order from the `src/` directory:
 
-### 1️⃣ Data Loading
+1.  **`extract_domains.py`**: Parses raw `crt.sh` JSON logs into a clean domain list.
+2.  **`preprocess.py`**: Normalizes domains (lowercasing, stripping TLDs).
+3.  **`similarity.py`**: Calculates similarity ratios between domain pairs.
+4.  **`clustering.py`**: Groups similar domains into clusters using graph logic.
+5.  **`base_domain.py`**: Identifies the representative "original" domain per group.
+6.  **`detect_new.py`**: Compares new domain lists against identified bases to flag suspects.
 
--   Import dataset containing domain names and labels
+---
 
-### 2️⃣ Data Preprocessing
+## 📈 Example Results
+The system effectively identifies common typosquatting patterns:
 
--   Clean missing values
--   Normalize domain strings
--   Prepare structured data format
+| New Domain | Matched Base | Similarity Score |
+| :--- | :--- | :--- |
+| `absbok.com` | `absbook` | **0.92** |
+| `addax-tactical.net` | `addaxtactical` | **0.96** |
+| `ramarketing-secure.org` | `ramarketing` | **0.76** |
 
-### 3️⃣ Feature Engineering
+---
 
-Examples of extracted features: - Domain length - Number of dots -
-Presence of hyphens - Use of suspicious keywords - Numeric character
-ratio - Special character patterns
-
-### 4️⃣ Model Training
-
--   Train classification algorithms (e.g., Logistic Regression, Random
-    Forest, etc.)
--   Split dataset into training and testing sets
-
-### 5️⃣ Model Evaluation
-
-Evaluate performance using: - Accuracy - Precision - Recall - F1-score -
-Confusion Matrix
-
-### 6️⃣ Prediction
-
--   Classify new unseen domains
--   Output predicted class (Legitimate / Phishing)
-
-------------------------------------------------------------------------
-
-## 🚀 How to Run the Project
-
-### 1. Clone the repository
-
-``` bash
-git clone https://github.com/Ghostalex07/phishing-domain-detection.git
-cd phishing-domain-detection
-```
-
-### 2. Install dependencies
-
-``` bash
-pip install -r requirements.txt
-```
-
-### 3. Run the main script
-
-``` bash
-python main.py
-```
-
-------------------------------------------------------------------------
-
-## 📈 Example Output
-
-    Domain: secure-login-paypal-update.com
-    Prediction: Phishing ⚠️
-    Confidence: 0.94
-
-------------------------------------------------------------------------
-
-## 🛡️ Why Domain-Based Detection?
-
-Many phishing websites use domain manipulation techniques such as:
-
--   Typosquatting
--   Brand impersonation
--   Excessive subdomains
--   Suspicious keywords
--   Randomized character strings
-
-By analyzing these patterns, machine learning models can effectively
-detect potential threats before users access malicious content.
-
-------------------------------------------------------------------------
-
-## 📂 Project Structure
-
-    phishing-domain-detection/
-    │
-    ├── data/
-    ├── notebooks/
-    ├── main.py
-    ├── requirements.txt
-    └── README.md
-
-------------------------------------------------------------------------
-
-## 📚 Learning Outcomes
-
-This project demonstrates:
-
--   Applied machine learning in cybersecurity
--   Feature engineering techniques
--   Model evaluation best practices
--   Practical Git & GitHub workflow
-
-------------------------------------------------------------------------
-
-## 👤 Author
-
-**Alex Blanco**\
-GitHub: https://github.com/Ghostalex07
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is intended for educational and research purposes.
+## 📂 Repository Structure
+```text
+phishing-domain-detection/
+├── data/               # Input JSON logs and output CSV results
+├── src/                # Modular Python source code
+├── requirements.txt    # Project dependencies
+└── README.md           # Project documentation
