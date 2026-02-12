@@ -1,0 +1,46 @@
+Cluster 1: 60minuteonlinecash, 60minuteonlineloans
+Cluster 2: absbook, casebook
+Cluster 3: ad-digital, aycdigital, pazdigital
+Cluster 4: addaxtactical, shaddoxtactical
+Cluster 5: adultsensations, adultsensationscash
+Cluster 6: agadomarketing, ramarketing
+Cluster 7: asmautoparts, astonparts
+Cluster 8: athlonline, hlcconline
+Cluster 9: avatarmastercourse, avatarmastersresource
+Cluster 10: avatarprocourse, theavatarcourse
+Cluster 11: bargesupply, pagsupply
+Cluster 12: bgmagazin, hubmagazine
+Cluster 13: binadesa, bingads
+Cluster 14: bragstore, ergstore
+Cluster 15: brightline, mbrightonline
+Cluster 16: cabaonline, raaonline, sawdaonline
+Cluster 17: capstraining, vfpstraining, visatraining
+Cluster 18: casusa, clarksusa
+Cluster 19: ceo-energy, ge-energy
+Cluster 20: circleci, circlecvi
+Cluster 21: ckolabs, collabos
+Cluster 22: clickatell, clickwall
+Cluster 23: cology, vology
+Cluster 24: creativeems, creativeideas
+Cluster 25: freedigitalscrapbooking, godigitalscrapbooking
+Cluster 26: garintechnologies, linxtechnologies, varialtechnologies
+Cluster 27: golf, mggolf
+Cluster 28: gsomportal, softportal
+Cluster 29: htm-sensors, it-sensors
+Cluster 30: ialla, lilla
+Cluster 31: ibackup, ukbackup
+Cluster 32: kitchenstuff, kitschnstuff
+Cluster 33: lawyersweekly, masslawyersweekly, milawyersweekly, nclawyersweekly, rilawyersweekly, sclawyersweekly, valawyersweekly
+Cluster 34: mamedicallaw, mimedicallaw, momedicallaw, vamedicallaw
+Cluster 35: naturemar, natureskare, naturevaper
+Cluster 36: ncofinancial, ranchofinancial
+Cluster 37: nydailyrecord, thedailyrecord
+Cluster 38: opel-web-services, palmwebservices
+Cluster 39: rr-verteilnetz, wwe-verteilnetz
+Cluster 40: salix, scalix
+Cluster 41: seat, seatid
+Cluster 42: shconvey, shconveyfife
+Cluster 43: slaterhoggconveyancing, slaterhoggconveyancingfife
+Cluster 44: staubmetals, staubmetals-int
+Cluster 45: webdi, webmd
+Cluster 46: weichai, weichaihm
