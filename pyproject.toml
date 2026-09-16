@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phishing-domain-detection"
+version = "0.1.0"
+description = "Similarity-based phishing domain detection using Certificate Transparency logs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["phishing", "cybersecurity", "domains", "certificate-transparency", "typosquatting"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+dependencies = [
+    "python-Levenshtein>=0.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+phishing-extract = "phishing_domain_detection.extract_domains:main"
+phishing-preprocess = "phishing_domain_detection.preprocess:main"
+phishing-similarity = "phishing_domain_detection.similarity:main"
+phishing-cluster = "phishing_domain_detection.clustering:main"
+phishing-base = "phishing_domain_detection.base_domain:main"
+phishing-detect = "phishing_domain_detection.detect_new:main"
+phishing-pipeline = "phishing_domain_detection.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

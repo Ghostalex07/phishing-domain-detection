@@ -1,1 +1,2 @@
-python-Levenshtein
+# Runtime dependencies (development tools live in pyproject.toml under [dev]).
+python-Levenshtein>=0.25
