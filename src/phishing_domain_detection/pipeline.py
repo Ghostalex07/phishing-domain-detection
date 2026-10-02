@@ -51,7 +51,7 @@ def run_pipeline(
     logger.info("[4/6] Built %d clusters -> %s", len(clusters), clustering.DEFAULT_OUTPUT)
 
     # 5 - Select a representative base domain per cluster.
-    frequency = {name: int(info["count"]) for name, info in counts.items()}
+    frequency = {name: int(info.count) for name, info in counts.items()}
     cluster_members = [sorted(cluster) for cluster in clusters]
     selected = base_domain.select_base_domains(cluster_members, frequency)
     base_domain.save_base_domains(data_dir / base_domain.DEFAULT_OUTPUT, selected)

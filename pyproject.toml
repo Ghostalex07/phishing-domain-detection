@@ -16,13 +16,22 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Security",
 ]
+# Upper bounds are pinned to the next major release, not to the newest patch that
+# happens to support Python 3.10. The project supports 3.10+, numpy drops 3.10 after
+# 2.2.x and rapidfuzz after 3.14.5, so a tighter bound would block their current
+# releases on newer interpreters for no security benefit.
 dependencies = [
-    "python-Levenshtein>=0.25",
+    "numpy>=1.24,<3",
+    "rapidfuzz>=3.9,<4",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=8.0",
+    "mypy>=1.11,<3",
+    # >=9.0.3 fixes GHSA-6w46-j5rx-g56g / PYSEC-2026-1845 (vulnerable tmpdir
+    # handling). The test suite leans on tmp_path heavily, so this floor matters.
+    "pytest>=9.0.3,<10",
+    "ruff>=0.6,<1",
 ]
 
 [project.scripts]

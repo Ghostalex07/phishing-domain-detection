@@ -1,2 +1,4 @@
 # Runtime dependencies (development tools live in pyproject.toml under [dev]).
-python-Levenshtein>=0.25
+# Keep in sync with [project.dependencies] in pyproject.toml.
+numpy>=1.24,<3
+rapidfuzz>=3.9,<4
