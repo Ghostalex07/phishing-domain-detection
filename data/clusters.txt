@@ -9,38 +9,39 @@ Cluster 8: athlonline, hlcconline
 Cluster 9: avatarmastercourse, avatarmastersresource
 Cluster 10: avatarprocourse, theavatarcourse
 Cluster 11: bargesupply, pagsupply
-Cluster 12: bgmagazin, hubmagazine
-Cluster 13: binadesa, bingads
-Cluster 14: bragstore, ergstore
-Cluster 15: brightline, mbrightonline
-Cluster 16: cabaonline, raaonline, sawdaonline
-Cluster 17: capstraining, vfpstraining, visatraining
-Cluster 18: casusa, clarksusa
-Cluster 19: ceo-energy, ge-energy
-Cluster 20: circleci, circlecvi
-Cluster 21: ckolabs, collabos
-Cluster 22: clickatell, clickwall
-Cluster 23: cology, vology
-Cluster 24: creativeems, creativeideas
-Cluster 25: freedigitalscrapbooking, godigitalscrapbooking
-Cluster 26: garintechnologies, linxtechnologies, varialtechnologies
-Cluster 27: golf, mggolf
-Cluster 28: gsomportal, softportal
-Cluster 29: htm-sensors, it-sensors
-Cluster 30: ialla, lilla
-Cluster 31: ibackup, ukbackup
-Cluster 32: kitchenstuff, kitschnstuff
-Cluster 33: lawyersweekly, masslawyersweekly, milawyersweekly, nclawyersweekly, rilawyersweekly, sclawyersweekly, valawyersweekly
-Cluster 34: mamedicallaw, mimedicallaw, momedicallaw, vamedicallaw
-Cluster 35: naturemar, natureskare, naturevaper
-Cluster 36: ncofinancial, ranchofinancial
-Cluster 37: nydailyrecord, thedailyrecord
-Cluster 38: opel-web-services, palmwebservices
-Cluster 39: rr-verteilnetz, wwe-verteilnetz
-Cluster 40: salix, scalix
-Cluster 41: seat, seatid
-Cluster 42: shconvey, shconveyfife
-Cluster 43: slaterhoggconveyancing, slaterhoggconveyancingfife
-Cluster 44: staubmetals, staubmetals-int
-Cluster 45: webdi, webmd
-Cluster 46: weichai, weichaihm
+Cluster 12: bcbsfl, bcbsla
+Cluster 13: bgmagazin, hubmagazine
+Cluster 14: binadesa, bingads
+Cluster 15: bragstore, ergstore
+Cluster 16: brightline, mbrightonline
+Cluster 17: cabaonline, raaonline, sawdaonline
+Cluster 18: capstraining, vfpstraining, visatraining
+Cluster 19: casusa, clarksusa
+Cluster 20: ceo-energy, ge-energy
+Cluster 21: circleci, circlecvi
+Cluster 22: ckolabs, collabos
+Cluster 23: clickatell, clickwall
+Cluster 24: cology, vology
+Cluster 25: creativeems, creativeideas
+Cluster 26: freedigitalscrapbooking, godigitalscrapbooking
+Cluster 27: garintechnologies, linxtechnologies, varialtechnologies
+Cluster 28: golf, mggolf
+Cluster 29: gsomportal, softportal
+Cluster 30: htm-sensors, it-sensors
+Cluster 31: ialla, lilla
+Cluster 32: ibackup, ukbackup
+Cluster 33: kitchenstuff, kitschnstuff
+Cluster 34: lawyersweekly, masslawyersweekly, milawyersweekly, nclawyersweekly, rilawyersweekly, sclawyersweekly, valawyersweekly
+Cluster 35: mamedicallaw, mimedicallaw, momedicallaw, vamedicallaw
+Cluster 36: naturemar, natureskare, naturevaper
+Cluster 37: ncofinancial, ranchofinancial
+Cluster 38: nydailyrecord, thedailyrecord
+Cluster 39: opel-web-services, palmwebservices
+Cluster 40: rr-verteilnetz, wwe-verteilnetz
+Cluster 41: salix, scalix
+Cluster 42: seat, seatid
+Cluster 43: shconvey, shconveyfife
+Cluster 44: slaterhoggconveyancing, slaterhoggconveyancingfife
+Cluster 45: staubmetals, staubmetals-int
+Cluster 46: webdi, webmd
+Cluster 47: weichai, weichaihm
