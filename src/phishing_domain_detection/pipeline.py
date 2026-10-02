@@ -4,7 +4,14 @@ import argparse
 import logging
 from pathlib import Path
 
-from . import base_domain, clustering, detect_new, extract_domains, preprocess, similarity
+from . import (
+    base_domain,
+    clustering,
+    detect_new,
+    extract_domains,
+    preprocess,
+    similarity,
+)
 from .cli import add_common_args, config_logging
 
 logger = logging.getLogger(__name__)
