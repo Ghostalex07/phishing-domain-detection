@@ -1,0 +1,16 @@
+version: 2
+
+updates:
+  # Keeps the pinned action SHAs in ci.yml moving. github-actions pins to a commit
+  # SHA, so without this they would never receive security fixes.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    labels: [dependencies]
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    labels: [dependencies]
